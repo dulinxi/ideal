@@ -17,10 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:dulinxi/ideal-ui.git"
+    "url": "https://github.com/dulinxi/ideal.git"
   },
   "bugs": {
-    "url": "https://github.com/dulinxi/ideal-ui/issues"
+    "url": "https://github.com/dulinxi/ideal/issues"
   },
   "homepage": "http://ideal.wjsh.com",
   "license": "MIT",
