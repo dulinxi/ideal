@@ -8,3 +8,4 @@ babel.config.js
 package-lock.js
 vue.config.js
 *.map
+*.html

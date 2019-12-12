@@ -16,16 +16,3 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
-.chat-wrapper {
-  width: 800px;
-  height: 550px;
-  background: #eee;
-  .chat-box {
-    position: relative;
-    display: flex;
-    widows: 100%;
-    height: 100%;
-  }
-}
-</style>

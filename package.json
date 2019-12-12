@@ -3,6 +3,10 @@
   "version": "0.1.1",
   "private": false,
   "main": "lib/ideal-ui.common.js",
+  "keywords": [
+    "ideal",
+    "ui"
+  ],
   "files": [
     "lib",
     "src",
@@ -30,7 +34,7 @@
     "dev": "vue-cli-service serve --open examples/main.js",
     "build": "vue-cli-service build --target lib --inline-vue",
     "lint": "vue-cli-service lint",
-    "build:lib": "vue-cli-service build --target lib --name ideal-ui src/index.js && npm run build:theme",
+    "build:lib": "vue-cli-service build --target lib --name ideal-ui --dest lib src/index.js && npm run build:theme",
     "build:theme": "gulp build --gulpfile gulpfile.js"
   },
   "dependencies": {},
