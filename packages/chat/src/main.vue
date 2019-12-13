@@ -14,6 +14,7 @@
       </div>
       <div class="i-message-list">
         main
+        <i-message-group></i-message-group>
       </div>
       <div class="i-message-box">
         editor
@@ -22,8 +23,23 @@
   </div>
 </template>
 <script>
+import IMessageGroup from './components/i-message-group';
 export default {
   name: 'IChat',
+  components: {
+    IMessageGroup
+  },
+  props: {
+    user: {
+      type: Object
+    },
+    messages: {
+      type: Array
+    },
+    toolbar: {
+      type: Object
+    }
+  },
   provide() {
     return {
       contact: this.currentContacts
@@ -33,6 +49,13 @@ export default {
     return {
       hasCurrent: false
     };
+  },
+  methods: {
+    // message post
+    post() {},
+    sendMessage() {},
+    typingStart() {},
+    typingend() {}
   }
 };
 </script>
