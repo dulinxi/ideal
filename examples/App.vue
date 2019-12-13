@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Chat />
+    <i-chat style="margin: 20px auto;width: 800px;height: 600px;"></i-chat>
+    <i-rich-editor></i-rich-editor>
   </div>
 </template>
 

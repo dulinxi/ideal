@@ -5,7 +5,6 @@ import './assets/scss/index.scss';
 
 import App from './App';
 Vue.use(IdealUI);
-console.log(1);
 new Vue({
   el: '#app',
   render: h => h(App)
