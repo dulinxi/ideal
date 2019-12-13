@@ -1,26 +1,41 @@
 'use strict';
 
-const { series, src, dest } = require('gulp');
+const { series, src, dest, watch } = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cssmin = require('gulp-cssmin');
+const cleanCSS = require('gulp-clean-css');
 
-function compile() {
-  return src('./packages/theme-ideal/*.scss')
+const paths = {
+  styles: {
+    src: './packages/theme-ideal/*.scss',
+    dest: './lib/theme-ideal'
+  },
+  fonts: {
+    src: './packages/theme-ideal/fonts/**',
+    dest: './lib/fonts'
+  }
+};
+function styles() {
+  return src(paths.styles.src)
     .pipe(sass.sync())
+    .pipe(cleanCSS())
     .pipe(
       autoprefixer({
         cascade: false
       })
     )
     .pipe(cssmin())
-    .pipe(dest('./lib/theme-ideal'));
+    .pipe(dest(paths.styles.dest));
 }
 
 function copyfont() {
-  return src('./packages/theme-ideal/fonts/**')
+  return src(paths.fonts.src)
     .pipe(cssmin())
-    .pipe(dest('./lib/fonts'));
+    .pipe(dest(paths.fonts.dest));
 }
-
-exports.build = series(compile, copyfont);
+function watchScss() {
+  watch(paths.styles.src, styles);
+}
+exports.build = series(styles, copyfont);
+exports.watch = watchScss;
