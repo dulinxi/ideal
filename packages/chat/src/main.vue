@@ -1,5 +1,5 @@
 <template>
-  <div class="chat-wrapper">
+  <div class="ide-chat">
     <div class="chat-box">1</div>
   </div>
 </template>

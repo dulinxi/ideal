@@ -1,4 +1,2 @@
-body {
-  color: red;
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.15);
-}
+@import 'variables.scss';
+@import 'chat.scss';
