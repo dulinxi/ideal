@@ -5,9 +5,9 @@
 ## dev
 
 ```shell
-// this command will run the demo at localhost
+# this command will run the demo at localhost
 npm run dev:demo
-// this command will compile the sass files from theme folder
+# this command will compile the sass files from theme folder
 npm run dev:theme
 ```
 
@@ -28,4 +28,9 @@ Vue.use(IdealUI);
 
 ## Browser Support
 
-Modern browsers and Internet Explorer 10+.
+<<<<<<< HEAD
+
+=======
+
+> > > > > > > 1a1b2336805964651414f916e5a22f893e5735c2
+> > > > > > > Modern browsers and Internet Explorer 10+.
