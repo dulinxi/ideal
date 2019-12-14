@@ -3,31 +3,30 @@
     <div class="i-chat__menubar">
       <div></div>
       <div>
-        <i-button>+</i-button>
+        <i-button><i class="i-icon-plus"></i></i-button>
       </div>
     </div>
     <div class="i-chat__side"></div>
     <div v-if="hasCurrent" class="i-chat__default"></div>
     <div v-else class="i-chat__main">
       <div class="i-message-header">
-        top
+        <i-chat-header />
       </div>
       <div class="i-message-list">
-        main
-        <i-message-group></i-message-group>
+        <i-message-content></i-message-content>
       </div>
-      <div class="i-message-box">
-        editor
-      </div>
+      <div class="i-message-box"></div>
     </div>
   </div>
 </template>
 <script>
-import IMessageGroup from './components/i-message-group';
+import IMessageContent from './components/message-content';
+import IChatHeader from './components/chat-header';
 export default {
   name: 'IChat',
   components: {
-    IMessageGroup
+    IChatHeader,
+    IMessageContent
   },
   props: {
     user: {

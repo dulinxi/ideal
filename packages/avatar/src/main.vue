@@ -1,5 +1,7 @@
 <template>
-  <span>avatar</span>
+  <span :class="['i-avatar', { 'i-avatar-circle': shape === 'circle' }]">
+    <img src="" alt="" />
+  </span>
 </template>
 <script>
 export default {

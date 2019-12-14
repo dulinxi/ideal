@@ -36,6 +36,7 @@ function copyfont() {
 }
 function watchScss() {
   watch(paths.styles.src, styles);
+  watch(paths.fonts.src, copyfont);
 }
 exports.build = series(styles, copyfont);
 exports.watch = watchScss;

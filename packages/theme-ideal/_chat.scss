@@ -1,6 +1,5 @@
 .i-chat {
   display: flex;
-  color: red;
   box-shadow: $box-shadow-base;
   &__menubar {
     display: flex;
@@ -39,6 +38,44 @@
     .i-message-box {
       height: 100px;
       background-color: rgb(255, 255, 255);
+    }
+  }
+}
+// chat 顶部
+.i-chat-header {
+  padding: 0 10px 0 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.i-message {
+  display: inline-block;
+  padding: 10px 20px;
+  line-height: 14px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #6c89f4;
+  border-radius: 15px 20px 20px 0;
+  &-image {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.i-message-content {
+  padding: 0 10px;
+  > * + * {
+    margin-top: 10px;
+  }
+  .i-message-group {
+    position: relative;
+    padding-left: 40px;
+    .i-avatar {
+      position: absolute;
+      left: 0;
+      bottom: 0;
     }
   }
 }

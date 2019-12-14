@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'ideal-icon';
+  src: url('#{$font-path}/ideal-icons.woff') format('woff'),
+    url('#{$font-path}/ideal-icons.ttf') format('truetype');
+}
+
+[class^='i-icon-'],
+[class*=' i-icon-'] {
+  font-family: 'ideal-icon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.i-icon-star:before {
+  content: '\e633';
+}
+
+.i-icon-send:before {
+  content: '\ea79';
+}
+
+.i-icon-emoji:before {
+  content: '\e632';
+}
+
+.i-icon-delete:before {
+  content: '\e671';
+}
+
+.i-icon-backout:before {
+  content: '\e6e2';
+}
+
+.i-icon-call:before {
+  content: '\e91e';
+}
+
+.i-icon-more:before {
+  content: '\e65b';
+}
+
+.i-icon-pay:before {
+  content: '\e634';
+}
+
+.i-icon-team:before {
+  content: '\e61a';
+}
+
+.i-icon-chat:before {
+  content: '\e622';
+}
+
+.i-icon-plus:before {
+  content: '\e605';
+}
